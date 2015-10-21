@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+        <Button android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/add_btn_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/add_btn"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_order_items"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/submenu" >
+
+                <ImageView
+                    android:id="@+id/scrollmenu_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/submenu_left" />
+
+                <ImageView
+                    android:id="@+id/scrollmenu_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/submenu_right" />
+
+                <HorizontalScrollView
+                    android:id="@+id/scrollmenu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@id/scrollmenu_right"
+                    android:layout_toRightOf="@id/scrollmenu_left"
+                    android:background="@drawable/submenu"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical" >
+                         <TextView
+                            android:id="@+id/scrollmenu_history"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/company_info_menu_normal"
+                            android:textColor="@android:color/white"
+                            android:text="@string/menu_title_history"
+                            android:layout_weight="1"
+                            android:textSize="15sp"/>
+                         <TextView
+                            android:id="@+id/scrollmenu_communication"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/company_info_menu_normal"
+                            android:textColor="@android:color/white"
+                            android:text="@string/menu_title_communication"
+                            android:layout_weight="1"
+                            android:textSize="15sp"/>
+                         <TextView
+                            android:id="@+id/scrollmenu_mine"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/company_info_menu_normal"
+                            android:textColor="@android:color/white"
+                            android:text="@string/menu_title_mine"
+                            android:layout_weight="1"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/chat_main_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+        </LinearLayout>
+</LinearLayout>

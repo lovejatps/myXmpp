@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" 
+        android:background="@drawable/titlebar">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_sendto"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+        
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/return_title"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/back"
+            android:background="@drawable/return_btn_bg"/>
+    </RelativeLayout>
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical" >
+        
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:id="@+id/back"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送给：" />
+
+        <TextView
+            android:id="@+id/main_sendto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+    </LinearLayout>
+    -->
+
+    <ListView
+        android:layout_margin="2dp"
+        android:id="@+id/messagebody"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:background="@android:color/transparent"
+        android:layout_weight="1" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:ems="10" />
+        <Button
+            android:background="@drawable/send_btn_bg"
+            android:id="@+id/sendmessage"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:text="@string/send" />
+    </LinearLayout>
+
+</LinearLayout>

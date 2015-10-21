@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login_title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="用户名" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码" />
+
+    <EditText
+        android:id="@+id/login_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/text_link"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="这是一个超链接@00005" />
+
+</LinearLayout>

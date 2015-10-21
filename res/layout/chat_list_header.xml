@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+   <ProgressBar
+        android:id="@+id/progress_small_pb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/widget_little_loading_progress_bar"
+        android:indeterminateDuration="30"
+        android:indeterminateOnly="true" />
+
+</LinearLayout>

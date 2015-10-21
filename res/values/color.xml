@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="red">#EA010C</color>
+    <color name="background_color">#EBEBEB</color>
+    <color name="grey_bg">#8F141414</color>
+    <color name="semi_transparent_w">#7fffffff</color>
+</resources>
